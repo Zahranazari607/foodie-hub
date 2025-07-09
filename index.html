@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honme</title>
+  <link rel="icon" href="images/favicon (2).ico" type="images/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0" class="gradient-bg1">
+
+  <div class="rain-background">
+    <!-- Icons Drop-->
+    <div class="icon-drop" style="left: 10%;">🍔</div>
+    <div class="icon-drop" style="left: 30%; animation-delay: 1s;">🍕</div>
+    <div class="icon-drop" style="left: 50%; animation-delay: 2.5s;">🍛</div>
+    <div class="icon-drop" style="left: 70%; animation-delay: 0.7s;">🍟</div>
+    <div class="icon-drop" style="left: 85%; animation-delay: 1.8s;">🍜</div>
+  </div>
+
+  <!-- 1. Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+        <img src="images/foodie hub logo.png" alt="Logo" style="height: 32px;">
+        <span>Foodie Hub</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="resturants.html">Restaurants</a></li>
+          <li class="nav-item"><a class="nav-link" href="tandoori.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="form.html">Order Form</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Hero Section - Carousel -->
+  <section id="home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active position-relative" style="min-height: 100vh; background-image: url('images/front-view-delicious-meat-soup-with-greens-potatoes-dark-desk-sauce-meat-food.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="d-flex flex-column justify-content-center align-items-center text-white text-center position-relative" style="min-height: 100vh; z-index: 1;">
+          <div>
+            <h1 class="display-4 fw-bold">Welcome to Foodie Hub</h1>
+            <p class="lead">Order your favorite meals instantly!</p>
+              <div class="mt-4">
+                <a href="resturants.html" class="btn btn-primary btn-lg me-3">Browse Restaurants</a>
+                <a href="form.html" class="btn btn-secondary btn-lg">Order Now</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item position-relative" style="min-height: 100vh; background-image: url('images/afghan\ delights.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="d-flex flex-column justify-content-center align-items-center text-white text-center position-relative" style="min-height: 100vh; z-index: 1;">
+          <div>
+            <h1 class="display-4 fw-bold">Afghan Delights</h1>
+            <p class="lead">Discover local kebabs, mantu, and more.</p>
+              <div class="mt-4">
+                  <a href="resturants.html" class="btn btn-primary btn-lg me-3">Browse Restaurants</a>
+                  <a href="form.html" class="btn btn-secondary btn-lg">Order Now</a>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item position-relative" style="min-height: 100vh; background-image: url('images/composition-tasty-hamburgers.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="d-flex flex-column justify-content-center align-items-center text-white text-center position-relative" style="min-height: 100vh; z-index: 1;">
+          <div>
+            <h1 class="display-4 fw-bold">Fast Food Frenzy</h1>
+            <p class="lead">Burgers, fries, and everything in between.</p>
+              <div class="mt-4">
+                  <a href="resturants.html" class="btn btn-primary btn-lg me-3">Browse Restaurants</a>
+                  <a href="form.html" class="btn btn-secondary btn-lg">Order Now</a>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item position-relative" style="min-height: 100vh; background-image: url('images/iranian\ food.jpeg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="d-flex flex-column justify-content-center align-items-center text-white text-center position-relative" style="min-height: 100vh; z-index: 1;">
+          <div>
+            <h1 class="display-4 fw-bold">Persian Cuisine</h1>
+            <p class="lead">Enjoy flavorful kebabs, saffron rice, and traditional stews.</p>
+              <div class="mt-4">
+                  <a href="resturants.html" class="btn btn-primary btn-lg me-3">Browse Restaurants</a>
+                  <a href="form.html" class="btn btn-secondary btn-lg">Order Now</a>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="carousel-item position-relative" style="min-height: 100vh; background-image: url('images/japanese-sushi-with-salmon-caviar.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="d-flex flex-column justify-content-center align-items-center text-white text-center position-relative" style="min-height: 100vh; z-index: 1;">
+          <div>
+            <h1 class="display-4 fw-bold">Sushi Sensations</h1>
+            <p class="lead">Fresh nigiri, maki rolls, and Japanese flavors at your fingertips.</p>
+            <div class="mt-4">
+              <a href="resturants.html" class="btn btn-primary btn-lg me-3">Browse Restaurants</a>
+              <a href="form.html" class="btn btn-secondary btn-lg">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="carousel-item position-relative" style="min-height: 100vh; background-image: url('images/buddha-bowl-dish-with-vegetables-legumes-top-view.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="d-flex flex-column justify-content-center align-items-center text-white text-center position-relative" style="min-height: 100vh; z-index: 1;">
+          <div>
+            <h1 class="display-4 fw-bold">Vegan Delights</h1>
+            <p class="lead">Plant-based meals full of flavor, freshness, and health.</p>
+            <div class="mt-4">
+              <a href="resturants.html" class="btn btn-primary btn-lg me-3">Browse Restaurants</a>
+              <a href="form.html" class="btn btn-secondary btn-lg">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+
+    
+
+  <!-- 7. Contact / Footer -->
+  <footer id="contact" class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-center text-md-start align-items-center">
+        
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-3">
+          <h5>Contact</h5>
+          <p>Email: <a href="mailto:nazariz673@gmail.com" class="text-white text-decoration-none">nazariz673@gmail.com</a></p>
+          <p>Phone: <a href="tel:+93700000000" class="text-white text-decoration-none">+93 700 000 000</a></p>
+          <p>Address: Kabul, Afghanistan</p>
+        </div>
+        
+        <!-- Social Media Icons as Buttons -->
+        <div class="col-md-4 mb-3">
+          <h5>Follow Us</h5>
+          <div class="d-flex justify-content-center justify-content-md-start gap-2">
+            <a href="https://www.facebook.com/share/1C6DprSn7f/" target="_blank" class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/zahra_n6733/" target="_blank" class="btn btn-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://x.com/Zahrana70554346" target="_blank" class="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="col-md-4 text-center text-md-end">
+          <p class="mb-0">&copy; 2025 Foodie Hub</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

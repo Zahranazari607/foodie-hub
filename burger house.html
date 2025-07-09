@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu / Burger House</title>
+  <link rel="icon" href="images/favicon (2).ico" type="images/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0" class="gradient-bg">
+
+  <div class="rain-background">
+    <!-- Icons Drop-->
+    <div class="icon-drop" style="left: 10%;">🍔</div>
+    <div class="icon-drop" style="left: 30%; animation-delay: 1s;">🍕</div>
+    <div class="icon-drop" style="left: 50%; animation-delay: 2.5s;">🍛</div>
+    <div class="icon-drop" style="left: 70%; animation-delay: 0.7s;">🍟</div>
+    <div class="icon-drop" style="left: 85%; animation-delay: 1.8s;">🍜</div>
+  </div>
+
+  <!-- 1. Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+        <img src="images/foodie hub logo.png" alt="Logo" style="height: 32px;">
+        <span>Foodie Hub</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="resturants.html">Restaurants</a></li>
+          <li class="nav-item"><a class="nav-link" href="form.html">Order Form</a></li>
+          <li class="nav-item"><a class="nav-link" href="tandoori.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 4. Menu Section -->
+  <section id="menu" class="py-5 gradient-bg">
+    <div class="container">
+      <h2 class="text-center mb-4">Menu</h2>
+
+      <!-- Tabs Navigation -->
+      <ul class="nav nav-pills justify-content-center mb-4" id="menuTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tandoori-tab" data-bs-toggle="pill" data-bs-target="#tandoori" type="button" role="tab">Tandoori Treat</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="burger-tab" data-bs-toggle="pill" data-bs-target="#burger" type="button" role="tab">Burger House</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="persian-tab" data-bs-toggle="pill" data-bs-target="#persian" type="button" role="tab">Persian Delights</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="kabul-tab" data-bs-toggle="pill" data-bs-target="#kabul" type="button" role="tab">Kabul Kitchen</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="veggie-tab" data-bs-toggle="pill" data-bs-target="#veggie" type="button" role="tab">Veggie Bites</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="sushi-tab" data-bs-toggle="pill" data-bs-target="#sushi" type="button" role="tab">Sushi World</button>
+        </li>
+      </ul>
+
+      <!-- Tabs Content -->
+      <div class="tab-content" id="menuTabContent">
+
+        <!-- Tandoori Treat Menu -->
+        <div class="tab-pane fade show active" id="tandoori" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/chicken tnadoori.jpeg" class="card-img-top custom-img" alt="Tandoori Dish 1">
+                <div class="card-body">
+                  <h5 class="card-title">Tandoori Chicken -Dish 1</h5>
+                  <p class="card-text">Spicy grilled chicken marinated in yogurt and spices.</p>
+                  <p class="mb-1"><strong>Price:</strong> $10.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/tikka.jpeg" class="card-img-top custom-img" alt="Tandoori Dish 2">
+                <div class="card-body">
+                  <h5 class="card-title">Chicken Tikka -Dish 2</h5>
+                  <p class="card-text">Boneless chicken grilled with Indian spices.</p>
+                  <p class="mb-1"><strong>Price:</strong> $11.49</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/tandoori lamp chops.jpeg" class="card-img-top custom-img" alt="Tandoori Dish 3">
+                <div class="card-body">
+                  <h5 class="card-title">Tandoori Lamb Chops -Dish 3</h5>
+                  <p class="card-text">Tender lamb marinated in yogurt and spices.</p>
+                  <p class="mb-1"><strong>Price:</strong> $14.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/paneer tikka.jpeg" class="card-img-top custom-img" alt="Tandoori Dish 4">
+                <div class="card-body">
+                  <h5 class="card-title">Paneer Tikka -Dish 4</h5>
+                  <p class="card-text">Cottage cheese grilled with tandoori spices.</p>
+                  <p class="mb-1"><strong>Price:</strong> $9.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/tandoori fish grilled.jpeg" class="card-img-top custom-img" alt="Tandoori Dish 5">
+                <div class="card-body">
+                  <h5 class="card-title">Tandoori Fish -Dish 5</h5>
+                  <p class="card-text">Grilled fish fillet marinated in herbs and spices.</p>
+                  <p class="mb-1"><strong>Price:</strong> $13.49</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/chicken tandoori mixed.jpeg" class="card-img-top custom-img" alt="Tandoori Dish 6">
+                <div class="card-body">
+                  <h5 class="card-title">Tandoori Mixed Grill -Dish 6</h5>
+                  <p class="card-text">Assorted tandoori meats served hot and fresh.</p>
+                  <p class="mb-1"><strong>Price:</strong> $15.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Burger House Menu -->
+        <div class="tab-pane fade" id="burger" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/burger.jpg" class="card-img-top custom-img" alt="Burger 1">
+                <div class="card-body">
+                  <h5 class="card-title">Classic Cheeseburger -Dish 1</h5>
+                  <p class="card-text">Juicy beef patty with melted cheese and pickles.</p>
+                  <p class="mb-1"><strong>Price:</strong> $12.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/bacon burger.jpg" class="card-img-top custom-img" alt="Burger 2">
+                <div class="card-body">
+                  <h5 class="card-title">Double Bacon Burger -Dish 2</h5>
+                  <p class="card-text">Beef patty with crispy bacon and cheddar cheese.</p>
+                  <p class="mb-1"><strong>Price:</strong> $10.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/mashroom burger.jpg" class="card-img-top custom-img" alt="Burger 3">
+                <div class="card-body">
+                  <h5 class="card-title">Mushroom Swiss Burger -Dish 3</h5>
+                  <p class="card-text">Juicy beef with sautéed mushrooms and Swiss cheese.</p>
+                  <p class="mb-1"><strong>Price:</strong> $10.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/bbq burger.jpg" class="card-img-top custom-img" alt="Burger 4">
+                <div class="card-body">
+                  <h5 class="card-title">BBQ Burger -Dish 4</h5>
+                  <p class="card-text">Beef patty with BBQ sauce and crispy onions.</p>
+                  <p class="mb-1"><strong>Price:</strong> $9.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/veggie burger.jpg" class="card-img-top custom-img" alt="Burger 5">
+                <div class="card-body">
+                  <h5 class="card-title">Veggie Burger -Dish 5</h5>
+                  <p class="card-text">Grilled vegetable patty with lettuce and tomato.</p>
+                  <p class="mb-1"><strong>Price:</strong> $11.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/spicy chicken burger.jpg" class="card-img-top custom-img" alt="Burger 6">
+                <div class="card-body">
+                  <h5 class="card-title">Spicy Chicken Burger -Dish 6</h5>
+                  <p class="card-text">Spicy fried chicken with mayo and pickles.</p>
+                  <p class="mb-1"><strong>Price:</strong> $10.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Persian Delights Menu -->
+        <div class="tab-pane fade" id="persian" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/kabab koobideh wirh saffron rice.jpg" class="card-img-top custom-img" alt="Persian Dish 1">
+                <div class="card-body">
+                  <h5 class="card-title">Kabab Koobideh -Dish 1</h5>
+                  <p class="card-text">Minced meat skewers served with saffron rice.</p>
+                  <p class="mb-1"><strong>Price:</strong> $15.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/fesenjan.jpg" class="card-img-top custom-img" alt="Persian Dish 2">
+                <div class="card-body">
+                  <h5 class="card-title">Fesenjan -Dish 2</h5>
+                  <p class="card-text">Chicken stew with pomegranate and walnut sauce.</p>
+                  <p class="mb-1"><strong>Price:</strong> $20.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/ghormeh sabzi.jpg" class="card-img-top custom-img" alt="Persian Dish 3">
+                <div class="card-body">
+                  <h5 class="card-title">Ghormeh Sabzi -Dish 3</h5>
+                  <p class="card-text">Herb stew with lamb, kidney beans, and dried lime.</p>
+                  <p class="mb-1"><strong>Price:</strong> $15.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/tahchin.jpg" class="card-img-top custom-img" alt="Persian Dish 4">
+                <div class="card-body">
+                  <h5 class="card-title">Tahchin -Dish 4</h5>
+                  <p class="card-text">Baked saffron rice with chicken and yogurt.</p>
+                  <p class="mb-1"><strong>Price:</strong> $10.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/zereshkpolo.jpg" class="card-img-top custom-img" alt="Persian Dish 5">
+                <div class="card-body">
+                  <h5 class="card-title">Zereshk Polo -Dish 5</h5>
+                  <p class="card-text">Saffron rice with barberries and chicken.</p>
+                  <p class="mb-1"><strong>Price:</strong> $15.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/ashe reshteh.jpg" class="card-img-top custom-img" alt="Persian Dish 6">
+                <div class="card-body">
+                  <h5 class="card-title">Ash Reshteh -Dish 6</h5>
+                  <p class="card-text">Thick Persian noodle soup with herbs and beans.</p>
+                  <p class="mb-1"><strong>Price:</strong> $19.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kabul Kitchen Menu -->
+        <div class="tab-pane fade" id="kabul" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/mantu.jpg" class="card-img-top custom-img" alt="Afghan Dish 1">
+                <div class="card-body">
+                  <h5 class="card-title">Mantu -Dish 1</h5>
+                  <p class="card-text">Steamed dumplings filled with seasoned meat and onions.</p>
+                  <p class="mb-1"><strong>Price:</strong> $10.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/bolani.jpg" class="card-img-top custom-img" alt="Afghan Dish 2">
+                <div class="card-body">
+                  <h5 class="card-title">Bolani -Dish 2</h5>
+                  <p class="card-text">Stuffed flatbread with potato and herbs.</p>
+                  <p class="mb-1"><strong>Price:</strong> $10.00</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/kabuli palau.jpg" class="card-img-top custom-img" alt="Afghan Dish 3">
+                <div class="card-body">
+                  <h5 class="card-title">Qabili Palau -Dish 3</h5>
+                  <p class="card-text">Rice with lamb, raisins, and carrots.</p>
+                  <p class="mb-1"><strong>Price:</strong> $15.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/shorwa.jpg" class="card-img-top custom-img" alt="Afghan Dish 4">
+                <div class="card-body">
+                  <h5 class="card-title">Shorwa -Dish 4</h5>
+                  <p class="card-text">Traditional Afghan soup with meat and vegetables.</p>
+                  <p class="mb-1"><strong>Price:</strong> $14.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/chapli kabab.jpg" class="card-img-top custom-img" alt="Afghan Dish 5">
+                <div class="card-body">
+                  <h5 class="card-title">Chapli Kebab -Dish 5</h5>
+                  <p class="card-text">Spiced minced meat patties fried until crispy.</p>
+                  <p class="mb-1"><strong>Price:</strong> $12.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/aushak.jpg" class="card-img-top custom-img" alt="Afghan Dish 6">
+                <div class="card-body">
+                  <h5 class="card-title">Aushak -Dish 6</h5>
+                  <p class="card-text">Leek-filled dumplings topped with tomato sauce and yogurt.</p>
+                  <p class="mb-1"><strong>Price:</strong> $9.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veggie Bites Menu -->
+        <div class="tab-pane fade" id="veggie" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/grilled vegetables.jpg" class="card-img-top custom-img" alt="Veggie Dish 1">
+                <div class="card-body">
+                  <h5 class="card-title">Grilled Vegetable Skewers -Dish 1</h5>
+                  <p class="card-text">Seasonal veggies grilled to perfection.</p>
+                  <p class="mb-1"><strong>Price:</strong> $15.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/falafel.jpg" class="card-img-top custom-img" alt="Veggie Dish 2">
+                <div class="card-body">
+                  <h5 class="card-title">Falafel Plate -Dish 2</h5>
+                  <p class="card-text">Crispy chickpea patties served with tahini sauce.</p>
+                  <p class="mb-1"><strong>Price:</strong> $15.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/stuffed bell peppers.jpg" class="card-img-top custom-img" alt="Veggie Dish 3">
+                <div class="card-body">
+                  <h5 class="card-title">Stuffed Bell Peppers -Dish 3</h5>
+                  <p class="card-text">Peppers stuffed with rice, nuts, and herbs.</p>
+                  <p class="mb-1"><strong>Price:</strong> $14.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/hearty lentile soup.jpg" class="card-img-top custom-img" alt="Veggie Dish 4">
+                <div class="card-body">
+                  <h5 class="card-title">Lentil Soup -Dish 4</h5>
+                  <p class="card-text">Hearty lentil soup with fresh herbs.</p>
+                  <p class="mb-1"><strong>Price:</strong> $20.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/spinach pie.jpg" class="card-img-top custom-img" alt="Veggie Dish 5">
+                <div class="card-body">
+                  <h5 class="card-title">Spinach Pie -Dish 5</h5>
+                  <p class="card-text">Flaky pastry filled with spinach and feta cheese.</p>
+                  <p class="mb-1"><strong>Price:</strong> $15.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/roasted cauliflower.jpg" class="card-img-top custom-img" alt="Veggie Dish 6">
+                <div class="card-body">
+                  <h5 class="card-title">Roasted Cauliflower -Dish 6</h5>
+                  <p class="card-text">Cauliflower roasted with garlic and herbs.</p>
+                  <p class="mb-1"><strong>Price:</strong> $15.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sushi World Menu -->
+        <div class="tab-pane fade" id="sushi" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/california roll.jpg" class="card-img-top custom-img" alt="Sushi Dish 1">
+                <div class="card-body">
+                  <h5 class="card-title">California Roll -Dish 1</h5>
+                  <p class="card-text">Crab meat, avocado, and cucumber roll.</p>
+                  <p class="mb-1"><strong>Price:</strong> $10.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/spicy tuna roll.jpg" class="card-img-top custom-img" alt="Sushi Dish 2">
+                <div class="card-body">
+                  <h5 class="card-title">Spicy Tuna Roll -Dish 2</h5>
+                  <p class="card-text">Tuna with spicy mayo and cucumber.</p>
+                  <p class="mb-1"><strong>Price:</strong> $15.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/salmon nigiri.jpg" class="card-img-top custom-img" alt="Sushi Dish 3">
+                <div class="card-body">
+                  <h5 class="card-title">Salmon Nigiri -Dish 3</h5>
+                  <p class="card-text">Fresh salmon on rice ball.</p>
+                  <p class="mb-1"><strong>Price:</strong> $13.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/eel roll.jpg" class="card-img-top custom-img" alt="Sushi Dish 4">
+                <div class="card-body">
+                  <h5 class="card-title">Eel Roll -Dish 4</h5>
+                  <p class="card-text">Grilled eel with sweet sauce.</p>
+                  <p class="mb-1"><strong>Price:</strong> $15.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/vegetable roll.jpg" class="card-img-top custom-img" alt="Sushi Dish 5">
+                <div class="card-body">
+                  <h5 class="card-title">Vegetable Roll -Dish 5</h5>
+                  <p class="card-text">Cucumber, avocado, and carrot roll.</p>
+                  <p class="mb-1"><strong>Price:</strong> $8.99</p>
+                  <span class="badge bg-success">Available</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="images/shrimp tempura roll.jpg" class="card-img-top custom-img" alt="Sushi Dish 6">
+                <div class="card-body">
+                  <h5 class="card-title">Shrimp Tempura Roll -Dish 6</h5>
+                  <p class="card-text">Fried shrimp with avocado and mayo.</p>
+                  <p class="mb-1"><strong>Price:</strong> $10.99</p>
+                  <span class="badge bg-danger">Not Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- 7. Contact / Footer -->
+  <footer id="contact" class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-center text-md-start align-items-center">
+        
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-3">
+          <h5>Contact</h5>
+          <p>Email: <a href="mailto:nazariz673@gmail.com" class="text-white text-decoration-none">nazariz673@gmail.com</a></p>
+          <p>Phone: <a href="tel:+93700000000" class="text-white text-decoration-none">+93 700 000 000</a></p>
+          <p>Address: Kabul, Afghanistan</p>
+        </div>
+        
+        <!-- Social Media Icons as Buttons -->
+        <div class="col-md-4 mb-3">
+          <h5>Follow Us</h5>
+          <div class="d-flex justify-content-center justify-content-md-start gap-2">
+            <a href="https://www.facebook.com/share/1C6DprSn7f/" target="_blank" class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/zahra_n6733/" target="_blank" class="btn btn-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://x.com/Zahrana70554346" target="_blank" class="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="col-md-4 text-center text-md-end">
+          <p class="mb-0">&copy; 2025 Foodie Hub</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
